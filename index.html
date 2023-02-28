@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <header class="container primero" >
+        <div class="row primero1">
+            <div class="col-xl-12 col-sm-12 col-md-12 medidas">
+                        <h1 class="uno">APRENDIENDO PSEUDO-CLASES</h1>
+            </div>
+        </div>    
+     </header>
+    <section class="container segundo">
+        <div class="row segundo2">
+            <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+              <h1>:active</h1>
+                <a class="active" href="#">Este enlace cambiará a color caramelo mientras hace clic en él.</a>
+                <p class="parrafo"> Esta clase permite que cuando el mouse pase por encima del parrafo se pueda resaltar y cree una forma de interaccion con el usuario </p>
+            </div>
+            <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+                <h1>:checked</h1>
+                <div class="censo">
+                  <input type="radio" name="my-input" id="yes">
+                  <label for="yes">Yes</label>
+                
+                  <input type="radio" name="my-input" id="no">
+                  <label for="no">No</label>
+                </div>
+                <div class="censo">
+                  <input type="checkbox" name="my-checkbox" id="opt-in">
+                  <label for="opt-in">REGISTRARME</label>
+                </div>
+                
+                <select class="censo1" name="selecciona">
+                  <option value="opt1">Música</option>
+                  <option value="opt2">Fútbol</option>
+                  <option value="opt3">Video juegos</option>
+                </select>
+
+                <p class="parrafo"> permite cear una forma de respuesta para el usuario que esta mirando la página </p>
+
+            </div>
+            <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+                <h1> :default</h1> 
+                <div class="censo2">
+                <input  type="radio" name="season" id="spring">
+                <label for="spring">MAL </label>
+
+                 <input type="radio" name="season" id="summer" checked>
+                 <label for="summer">BIEN</label>
+
+                 <input type="radio" name="season" id="fall">
+                 <label for="fall">MAL</label>
+
+                 <input type="radio" name="season" id="winter">
+                 <label for="winter">MAL</label>
+                </div>
+                 <p class="parrafo" > Permite crear una pregunta  donde se puede observar cual de ellas era la correcta  </p>
+                
+            </div>
+            <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+                <h1>:dir</h1>
+                <div class="censo" dir="rtl">
+                  <span>test1</span>
+                  <div dir="ltr">test2
+                    <div dir="auto">עִבְרִית</div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+                <h1>:disabled</h1>
+                      <!-- aca empieza desabled -->
+                      <form action="#">
+                        <fieldset id="shipping">
+                          <legend>Dirección de Envío</legend>
+                          <input type="text" placeholder="Nombre">
+                          <input type="text" placeholder="Dirección">
+                          <input type="text" placeholder="Código postal">
+                        </fieldset>
+                        <br>
+                        <fieldset id="billing">
+                          <legend>Dirección de facturación</legend>
+                          <label for="billing_is_shipping">Igual que la dirección de envío:</label>
+                          <input type="checkbox" id="billing-checkbox" checked>
+                          <br>
+                          <input type="text" placeholder="Nombre" disabled>
+                          <input type="text" placeholder="Dirección" disabled>
+                          <input type="text" placeholder="Código postal" disabled>
+                        </fieldset>
+                      </form>
+                      <!-- aca termina desabled  -->
+                <p class="parrafo"> permite realizar un formulario en la página </p>
+            </div>
+
+            <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+              <h1>:empty</h1>
+              <div class="box"><!-- Voy a ser de color lima. --></div>
+              <div class="box">Voy a ser de color rosa.</div>
+              <div class="box">
+              <!-- Seré de color rosa debido a los espacios en blanco alrededor de este comentario. -->
+              </div>  
+            </div>
+
+            <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+              <h1>:enabled</h1> 
+              <form action="url_of_form">
+                <label for="FirstField">Primer campo (habilitado):</label>
+                <input type="text" id="FirstField" value="Lorem"><br>
+              
+                <label for="SecondField">Segundo campo (deshabilitado):</label>
+                <input type="text" id="SecondField" value="Ipsum" disabled="disabled"><br>
+                <input type="button" value="Enviar">
+              </form>
+              <p class="parrafo" >representa cualquier elemento habilitado. Un elemento está habilitado si puede ser activado (es decir seleccionado, se puede hacer click en él, acepta que se le introduzca texto, etc.) o si accepta el foco. El elemento también tiene un estado deshabilitado el en cuál, no puede ser activado ni acepta el foco.</p>
+             </div>
+
+          <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+            <h1>:first</h1>
+            <p>Primera página.</p>
+              <p>Segunda página.</p>
+              <button>Imprimir!</button>
+              <p class="parrafo"> representa la primera página de un documento impreso. </p>
+
+           </div>
+          <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+            <h1>:first-child</h1> 
+            <div>
+            <p>¡Este texto está seleccionado!</p>
+            <p>Este texto no está seleccionado.</p>
+          </div>
+
+          <div>
+            <h3 >Este texto no está seleccionado: no es un `p`.</h3>
+            <p>Este texto no está seleccionado.</p>
+               </div>
+               <p class="parrafo">La pseudo-clase :first-child de CSS representa el primer elemento entre un grupo de elementos hermanos. </p>
+          </div>
+
+          <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+            <h2>:first-of-type </h2>
+            <h3>Encabezado</h3>
+            <p class="rojo">Párrafo 1</p>
+            <p>Párrafo 2</p>
+            <p class="parrafo"> representa el primer elemento de su tipo entre un grupo de elementos hermanos.</p>
+          </div>
+
+          <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+              <h2>:first-of-type </h2>
+              <div id="fullscreen">
+                <h3>Demostración :fullscreen</h3>
+                <p class="parrafo">Este texto se pondrá grande y rojo cuando el navegador esté en modo de pantalla completa.</p>
+                <button id="fullscreen-button">Entrar en pantalla completa</button>
+              </div>
+          </div>
+
+          <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+                <h1>:focus</h1>
+                <input class="red-input" value=""><br>
+                <input class="blue-input" value=""><br>
+                <p class="parrafo">representa un elemento (como una entrada de formulario) que ha recibido el foco. Generalmente se activa cuando el usuario hace clic, toca un elemento o lo selecciona con la tecla "Tab" del teclado.</p>
+          </div>
+
+          <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+            <h1>:hover</h1>
+            <a href="#">Intenta pasar el mouse sobre este enlace.</a>
+            <p class="parrafo">coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente lo activa. Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse).   </p>
+          </div>
+
+      <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+            <h2>:indeterminate</h2>
+            <div class="ind">
+              <input type="checkbox" id="checkbox">
+              <label for="checkbox">Esta etiqueta comienza con el color lima.</label>
+            </div>
+            <div class="ind">
+              <input type="radio" id="radio">
+              <label for="radio">Esta etiqueta comienza con el color lima.</label>
+            <P class="parrafo"> representa cualquier elemento de formulario cuyo estado sea indeterminado.</P>
+            </div>
+      </div>
+       <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+          <h1>:in-range</h1>
+          <form action="" id="form1">
+            <ul>Los valores entre 1 y 10 son válidos.
+              <li class="numero">
+                <input id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
+                <label for="value1">Tu valor esta </label>
+              </li>
+            </ul>
+          </form>
+          <P class="parrafo">representa un elemento input cuyo valor actual se encuentra dentro de los límites de rango especificados por los atributos min y max.</P>
+        </div>
+      <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+          <h1>:invalid</h1>
+          <form>
+            <label for="url_input">Ingresa una URL:</label>
+            <input type="url" id="url_input" />
+            <br />
+            <br />
+            <label for="email_input">Introduzca una dirección de correo electrónico:</label>
+            <input type="email" id="email_input" required/>
+            <p class="parrafo"> representa cualquier elemento input u otro elemento form cuyos contenidos no se puedan validar (en-US).</p>
+          </form>
+      </div>
+       <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+          <h1>:lang</h1>
+          <div class="lang" lang="en"><q>Esta cita en inglés tiene una cita <q>anidada</q> adentro.</q></div>
+          <div class="lang" lang="fr"><q>Esta cita en francés tiene una cita <q>anidada</q> adentro.</q></div>
+          <div class="lang" lang="de"><q>Esta cita en aleman tiene una cita <q>anidada</q> adentro.</q></div>
+            <p class="parrafo">es utilizada para modificar elementos en función del idioma en el que se determina que están.</p>
+       </div>
+
+      <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+        <h2>:last-child</h2>
+        <div class="rojo">
+          <p>Este texto no está seleccionado.</p>
+          <p>¡Este texto está seleccionado!</p>
+        </div>
+        
+        <div class="rojo">
+          <p>Este texto no está seleccionado.</p>
+          <h3>Este texto no está seleccionado: no es un `p`.</h3>
+        </div>
+        <p class="parrafo">representa el último elemento entre un grupo de elementos hermanos.</p>
+      </div>
+
+   <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+        <h2>:last-of-type</h2>
+         <h3>Título</h3>
+         <p>Párrafo 1</p>
+        <p class="rojo"> Párrafo 2</p>
+        <p class="parrafo"> representa el último elemento de su tipo entre un grupo de elementos hermanos.</p>
+    </div>
+
+    <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+      <h1>:left</h1>
+    <p class="parrafo"> utilizada con la regla @page at, representa todas las páginas de la izquierda de un documento impreso</p> 
+   </div>
+
+  <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+    <h1>:link</h1>
+    <a href="#ordinary-target">Este es un enlace ordinario.</a><br>
+     <a href="">Ya has visitado este enlace.</a><br>
+     <a>Enlace de marcador de posición (no se personalizará)</a>
+     <p class="parrafo">epresenta un elemento que aún no se ha visitado. Coincide con cada elemento no visitado  a, area, o link que tiene un atributo href.</p>
+  </div>
+
+  <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+    <h1>:not()</h1>
+    <p class="not">Soy un párrafo.</p>
+    <p class="fancy">¡Soy muy elegante!</p>
+    <div>NO soy un párrafo.</div>
+    <p class="parrafo"> Representa elementos que no coinciden con una lista de selectores. Como evita que se seleccionen elementos específicos, se lo conoce como la pseudoclase de negación.</p>
+  </div>
+
+  <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+    <h2>:nth-child</h2>
+    <p class="parrafo"> coincide con uno o más elementos en función de su posición entre un grupo de hermanos. </p>
+  </div>
+
+  <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+    <h2>:nth-last-child </h2>
+    <p class="parrafo"> selecciona uno o más elementos en función de su posición entre un grupo de hermanos, contando desde el final.  </p>
+  </div>
+
+ <div class="col-xl-3 col-sm-12 col-md-6 segundo-segundo">
+    <h2> :nth-last-of-type</h2>
+    <div>
+      <span>Este es un span.</span>
+      <span>Este es otro span.</span>
+      <em>Esto esta enfatizado.</em>
+      <span>¡Guauu, este span se pone color nrnj</span>
+      <strike> Esto está tachado. </strike>
+      <span>Aquí hay un último span.</span>
+    </div>
+    <p class="parrafo"> coincide con uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos, contando desde el final.</p>
+  </div>
+    
+
+
+
+
+      
+
+        
+
+          
+
+        
+
+
+     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <Script src="js/bootstrap.bundle.min.js"></Script>
+</body>
+</html>
